@@ -1,7 +1,7 @@
 Feature: User Login with Sikuli
 
   Scenario: Successful login using image recognition
-    Given the login screen is displayed
+    Given I have opened Notepad
     When I type "username_image.png" into "username_field_image.png"
     And I type "password_image.png" into "password_field_image.png"
     And I click "login_button_image.png"

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-12T17:36:09 IST" name="IMC Automation Suite" finished-at="2025-08-12T17:36:11 IST" duration-ms="1794">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.imc.TestRunner@9d5509a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-08-12T17:36:09 IST" name="Cucumber Tests" finished-at="2025-08-12T17:36:11 IST" duration-ms="1794">
+      <class name="com.imc.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.imc.TestRunner@9d5509a]" started-at="2025-08-12T17:36:09 IST" name="setUpClass" finished-at="2025-08-12T17:36:10 IST" duration-ms="1230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1bdaa23d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.imc.TestRunner@9d5509a]" started-at="2025-08-12T17:36:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-12T17:36:11 IST" duration-ms="396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login using image recognition"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Login with Sikuli"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.imc.TestRunner@9d5509a]" started-at="2025-08-12T17:36:11 IST" name="tearDownClass" finished-at="2025-08-12T17:36:11 IST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.imc.TestRunner -->
+    </test> <!-- Cucumber Tests -->
+  </suite> <!-- IMC Automation Suite -->
+</testng-results>
