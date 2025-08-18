@@ -9,10 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">IMC Automation Suite</th></tr>
-<tr><td><a href="#t0">Cucumber Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,794</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Cucumber Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,904</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">IMC Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.imc.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1755000370803</td><td rowspan="1">396</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">IMC Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.imc.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1755499184139</td><td rowspan="1">2304</td></tr></tbody>
 </table>
-<h2>Cucumber Tests</h2><h3 id="m0">com.imc.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful login using image recognition&quot;</td><td>&quot;User Login with Sikuli&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Cucumber Tests</h2><h3 id="m0">com.imc.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful login using text recognition&quot;</td><td>&quot;Order creation end to end case&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.sikuli.script.SikuliXception: image to search (1917, 1029) is larger than image to search in (1440, 900)
+	at org.sikuli.script.Finder$FindInput2.isValid(Finder.java:1247)
+	at org.sikuli.script.Finder$Finder2.doFind(Finder.java:618)
+	at org.sikuli.script.Finder$Finder2.find(Finder.java:584)
+	at org.sikuli.script.Finder.find(Finder.java:221)
+	at org.sikuli.script.Region.runFinder(Region.java:2861)
+	at org.sikuli.script.Region.doFind(Region.java:2799)
+	at org.sikuli.script.Region.find(Region.java:2275)
+	at stepDefinations.logintest.I_have_oIMC_App_open_using_the_batfile(logintest.java:27)
+	at ✽.IMC App open using the batfile(file:///C:/Users/Admin/Workspace/Workspace-git/IMC-sikuli/imc_automation/src/test/features/OrderCreation.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

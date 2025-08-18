@@ -2,6 +2,8 @@ package com.imc;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+
+import org.sikuli.script.ImagePath;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -19,6 +21,7 @@ import org.testng.annotations.BeforeTest;
 public class TestRunner extends AbstractTestNGCucumberTests {
     @BeforeTest
     void beforeTest() {
+       ImagePath.setBundlePath("C:\\Users\\Admin\\Workspace\\Workspace-git\\IMC-sikuli\\imc_automation\\src\\main\\resources\\images");
 
     }
 
