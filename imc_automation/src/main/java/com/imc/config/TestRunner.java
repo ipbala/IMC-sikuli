@@ -21,6 +21,7 @@ import org.testng.annotations.BeforeTest;
 public class TestRunner extends AbstractTestNGCucumberTests {
     @BeforeTest
     void beforeTest() {
+        // image path for sikuli , nned to see if this can be moved to the testng.xml
        ImagePath.setBundlePath("C:\\Users\\Admin\\Workspace\\Workspace-git\\IMC-sikuli\\imc_automation\\src\\main\\resources\\images");
 
     }
