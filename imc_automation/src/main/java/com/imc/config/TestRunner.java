@@ -1,4 +1,4 @@
-package com.imc;
+package com.imc.config;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;

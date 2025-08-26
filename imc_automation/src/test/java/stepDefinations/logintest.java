@@ -9,11 +9,14 @@ import org.sikuli.script.FindFailed;
 import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
 
+import com.imc.pojo.CreateOrderPojo;
+
 public class logintest {
 
     String windowImage = "windows.png";
     String appImage = "app.png";
      Screen s = new Screen();
+     CreateOrderPojo createOrder = new CreateOrderPojo();
      
     @Given("IMC App open using the batfile")
     public void I_have_oIMC_App_open_using_the_batfile() throws FindFailed, InterruptedException {
@@ -32,6 +35,9 @@ public class logintest {
         String extract_text = s.text();
         System.out.println("Extracted Text: " + extract_text);
         System.out.println("first Step");
+        System.out.println(createOrder.getShipper());
+
+        
     } catch (FindFailed e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
