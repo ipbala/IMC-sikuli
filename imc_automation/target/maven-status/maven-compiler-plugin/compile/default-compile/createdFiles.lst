@@ -1,4 +1,6 @@
+com\imc\config\TestRunner.class
+com\imc\pojo\SearchOrderPojo.class
+com\imc\utils\JsonOrderParser.class
+com\imc\utils\ScreensSize.class
 com\imc\pojo\CreateOrderPojo.class
-com\utils\GraphicsDevice.class
-com\utils\utils.class
-com\utils\ScreenSizeExample.class
+com\imc\utils\ScreenSizeExample.class

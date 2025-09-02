@@ -1,4 +1,4 @@
-package com.utils;
+package com.imc.utils;
 
 import java.awt.GraphicsEnvironment;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.Rectangle;
-public class utils {
+public class ScreensSize  {
     public  ArrayList<String>  getScreenSizes() {
         // Get the default Toolkit
                 
@@ -27,16 +27,4 @@ public class utils {
     return screenSizes;
 
     }
-
-// public static void WaitBySelector(IWebDriver driver, String selector)
-//     {
-//         var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
-//         wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(selector)));
-//     }
-    
-//     public static void ScrollToBottom(IWebDriver driver)
-//     {
-//         var js = (IJavaScriptExecutor)driver;
-//         js.ExecuteScript("window.scrollBy(0, document.body.scrollHeight)");
-//     }
 }

@@ -1,10 +1,11 @@
 {
-    "SearchOrder": {
+    "QuerySearch":[ {
         "OrderNumber": "109076452",
-        "OrderType": "E",
+        "OrderType": "A",
         "OrderRef": "102415804"
     },
-    "SearchOrder": {
+     {
         "OrderNumber": "109076452"
     }
+]
 }
