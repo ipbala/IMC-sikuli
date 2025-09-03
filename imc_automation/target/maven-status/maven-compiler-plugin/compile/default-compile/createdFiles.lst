@@ -1,6 +1,0 @@
-com\imc\pojo\SearchOrderPojo.class
-com\imc\utils\JsonOrderParser.class
-com\imc\utils\ScreensSize.class
-com\imc\pojo\CreateOrderPojo.class
-com\imc\utils\ConfigReader.class
-com\imc\utils\GenricUtils.class

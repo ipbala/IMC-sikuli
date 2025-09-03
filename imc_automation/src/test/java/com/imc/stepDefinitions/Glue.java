@@ -1,6 +1,8 @@
 package com.imc.stepDefinitions;
 
 import org.sikuli.script.App;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
 import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
 
@@ -34,6 +36,18 @@ public class Glue {
             if (app.isRunning()) {
 
                 System.out.println("App opened is : " + app.getTitle());
+            } else {
+                try {
+
+                    s.type(Key.WIN + "d");
+                    s.find("App.png");
+                    s.click();
+
+                } catch (FindFailed e) {
+
+                    e.printStackTrace();
+                }
+
             }
 
             Region appWindow = app.window();

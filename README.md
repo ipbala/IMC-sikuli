@@ -10,29 +10,59 @@ This project automates end-to-end test cases for the IMC application using Java,
 IMC-sikuli/
 │
 ├── imc_automation/
-│   ├── pom.xml                # Maven build file with dependencies
+│   ├── pom.xml
+│   ├── testng.xml
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/
-│   │   │   │   └── com/imc/
-│   │   │   │       ├── Main.java
-│   │   │   │       ├── TestRunner.java
-│   │   │   │       ├── pojo/
-│   │   │   │       │   └── CreateOrderPojo.java
-│   │   │   │       └── utils/
-│   │   │   │           └── JsonOrderParser.java
+│   │   │   │   └── com/
+│   │   │   │       └── imc/
+│   │   │   │           ├── pojo/
+│   │   │   │           │   ├── CreateOrderPojo.java
+│   │   │   │           │   └── SearchOrderPojo.java
+│   │   │   │           └── utils/
+│   │   │   │               ├── ConfigReader.java
+│   │   │   │               ├── GenricUtils.java
+│   │   │   │               ├── JsonOrderParser.java
+│   │   │   │               └── ScreensSize.java
 │   │   │   └── resources/
-│   │   │       ├── images/   # Image files for Sikuli
-│   │   │       └── testData/ # JSON test data files
-│   │   └── test/
-│   │       ├── features/     # Cucumber feature files
-│   │       ├── java/
-│   │       │   └── testng.xml
-│   │       └── stepDefinations/
-│   │           └── logintest.java
-│   └── target/               # Build output, reports, and generated files
-│
-├── README.md                 # Project documentation
+│   │   │       ├── config.properties
+│   │   │       ├── images/
+│   │   │       │   ├── app.png
+│   │   │       │   ├── Query.png
+│   │   │       │   └── windows.png
+│   │   │       └── testData/
+│   │   │           ├── CreateQuery.json
+│   │   │           └── searchQuery.json
+│   │   ├── test/
+│   │   │   ├── features/
+│   │   │   │   └── OrderCreation.feature
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── imc/
+│   │   │   │           ├── TestRunner.java
+│   │   │   │           ├── config/
+│   │   │   │           │   └── TestRunner.java
+│   │   │   │           └── stepDefinitions/
+│   │   │   │               ├── Glue.java
+│   │   │   │               └── QuerySearch.java
+│   │   │   └── resources/
+│   │   │       └── failedrerun.txt
+│   ├── target/
+│   │   ├── cucumber-reports/
+│   │   ├── classes/
+│   │   │   ├── config.properties
+│   │   │   ├── com/
+│   │   │   │   └── imc/
+│   │   │   │       ├── pojo/
+│   │   │   │       ├── utils/
+│   │   │   │       └── config/
+│   │   │   ├── images/
+│   │   │   └── testData/
+│   │   ├── surefire-reports/
+│   │   ├── test-classes/
+│   │   └── ...
+│   └── README.md
 └── ...
 ```
 
