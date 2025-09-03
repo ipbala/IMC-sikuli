@@ -10,7 +10,7 @@ import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
 import com.imc.pojo.SearchOrderPojo;
 
-public class querySearch {
+public class QuerySearch {
 
     String Ordernuber;
 

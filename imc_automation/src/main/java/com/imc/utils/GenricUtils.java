@@ -4,7 +4,7 @@ import org.sikuli.script.*;
 import org.testng.annotations.Test;
 
 
-public class genric {
+public class GenricUtils {
 
     public boolean robustClick(Screen screen, String imagePath, int maxRetries, int baseWaitMillis){
 

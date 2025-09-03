@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
     plugin = {"pretty", "html:target/cucumber-reports"},
     monochrome = true,
    // tags = "@SmokeTest or @Regression",
-    dryRun = false
+    dryRun = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
    
@@ -35,6 +35,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     
     @AfterTest
     void AfterTest() {
+
 
     }
 }
