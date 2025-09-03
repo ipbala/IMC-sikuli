@@ -7,10 +7,9 @@ import org.sikuli.script.ImagePath;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-// TODO: to be moved to the test section 
 @CucumberOptions(
     features = "src/test/features",
-    glue = {"stepDefinations", "myHooks"},
+    glue = {"com.imc.stepDefinitions", "myHooks"},
     plugin = {"pretty", "html:target/cucumber-reports"},
     monochrome = true,
    // tags = "@SmokeTest or @Regression",
@@ -22,9 +21,13 @@ public class TestRunner extends AbstractTestNGCucumberTests {
    
     @BeforeTest
     void beforeTest() {
-        // image path for sikuli , nned to see if this can be moved to the testng.xml
-       ImagePath.setBundlePath("C:\\Users\\bayyappa\\workspace\\Workspace-ocr\\IMC-sikuli\\imc_automation\\src\\main\\resources\\images");
-
+        // Use ConfigReader from utils package to get sikuli.path
+        String sikuliPath = com.imc.utils.ConfigReader.getProperty("sikuli.path");
+        if (sikuliPath != null && !sikuliPath.isEmpty()) {
+            ImagePath.setBundlePath(sikuliPath);
+        } else {
+            System.err.println("sikuli.path not set in config.properties");
+        }
     }
     @Test
     public void runCucumber() {

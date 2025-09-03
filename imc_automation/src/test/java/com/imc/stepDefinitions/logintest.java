@@ -1,4 +1,4 @@
-package stepDefinations;
+package com.imc.stepDefinitions;
 
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Pattern;
