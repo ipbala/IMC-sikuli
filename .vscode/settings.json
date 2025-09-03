@@ -1,5 +1,13 @@
 {
-    "maven.view": "hierarchical",
-    "java.configuration.updateBuildConfiguration": "interactive",
-    "java.debug.settings.onBuildFailureProceed": true
+  "maven.view": "hierarchical",
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.debug.settings.onBuildFailureProceed": true,
+  "cucumberautocomplete.steps": [
+    "imc_automation/src/test/java/com/imc/stepDefinitions/*.java"
+  ],
+  "cucumberautocomplete.syncfeatures": "src/test/features/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.strictGherkinValidation": true
 }
+
+

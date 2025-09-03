@@ -43,6 +43,7 @@ IMC-sikuli/
 1. **Prerequisites:**
 	- Java JDK 8 or above
 	- Maven 3.x
+	- Add Extentions : "Cucumber (Gherkin) Full Support" by Alexander Krechik
 	- (Optional) SikuliX setup for image-based automation
 
 2. **Clone the repository:**

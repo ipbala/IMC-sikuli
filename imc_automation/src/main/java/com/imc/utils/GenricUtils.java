@@ -1,7 +1,7 @@
 package com.imc.utils;
 
 import org.sikuli.script.*;
-import org.testng.annotations.Test;
+
 
 
 public class GenricUtils {

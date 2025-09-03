@@ -1,0 +1,3 @@
+com\imc\config\TestRunner.class
+com\imc\stepDefinitions\Glue.class
+com\imc\stepDefinitions\QuerySearch.class
